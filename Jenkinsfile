@@ -9,5 +9,11 @@ pipeline {
 				localTest()
 			}
 		}
+
+		stage("Test 2") {
+			steps {
+				myNewFunc("hello my world!")
+			}
+		}
 	}
 }
